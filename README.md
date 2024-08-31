@@ -9,7 +9,8 @@ This repo contains code to create a k8s cluster on eks which is required by vari
  4. Postgresql
  5. Redis
  6. Elasticsearch
+ 7. Cassandra
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwMDk0ODA5XX0=
+eyJoaXN0b3J5IjpbLTk5MzI5NzU1OCwxNDAwOTQ4MDldfQ==
 -->
