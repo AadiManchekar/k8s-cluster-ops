@@ -16,3 +16,13 @@ This repo contains code to create a k8s cluster on eks which is required by vari
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTIwNDQ5Mzg0MDEsMTQwMDk0ODA5XX0=
 -->
+
+## Steps to run
+
+1. You have to first create a s3 bucket inorder to store terraform.tfstate. You can either create it manually or use backend_s3.tf file (uncomment it) in isolatation to create a s3 bcuket and then comment it back.
+2. edit the bucket name in backend.tf file with the bucket you created.
+```
+cd terraform
+tf init
+tf plan
+tf apply -var-file=../environments/dev.tfvars
