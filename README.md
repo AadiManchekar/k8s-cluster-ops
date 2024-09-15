@@ -25,4 +25,4 @@ eyJoaXN0b3J5IjpbLTIwNDQ5Mzg0MDEsMTQwMDk0ODA5XX0=
 cd terraform
 tf init
 tf plan
-tf apply -var-file=../environments/dev.tfvars
+tf apply -var-file=../environments/terraform.tfvars
