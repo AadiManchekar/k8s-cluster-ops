@@ -14,3 +14,9 @@ variable "instance_type" {
   type        = string
   default     = "t2.micro"
 }
+
+variable "availability_zones" {
+  description = "List of availability zones to use."
+  type        = list(string)
+  default     = [] # By Default an empty list; will be overridden by data source
+}
