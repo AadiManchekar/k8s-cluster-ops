@@ -34,3 +34,8 @@ output "private_subnet_cidrs" {
     aws_subnet.private_zone2.cidr_block
   ]
 }
+
+output "internet_gateway" {
+  description = "Internet gateway to route traffice from VPC to internet"
+  value       = aws_internet_gateway.igw.tags["Name"]
+}
