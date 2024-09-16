@@ -27,6 +27,22 @@ output "private_subnet_names" {
   ]
 }
 
+output "public_subnet_cidrs" {
+  description = "CIDR blocks of the public subnets"
+  value = [
+    aws_subnet.public_zone1.cidr_block,
+    aws_subnet.public_zone2.cidr_block
+  ]
+}
+
+output "public_subnet_names" {
+  description = "Names of the public subnets"
+  value = [
+    aws_subnet.public_zone1.tags["Name"],
+    aws_subnet.public_zone2.tags["Name"]
+  ]
+}
+
 output "private_subnet_cidrs" {
   description = "CIDR blocks of the private subnets"
   value = [
