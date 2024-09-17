@@ -12,6 +12,8 @@ resource "aws_vpc" "main" {
 References: 
 1. https://aws.github.io/aws-eks-best-practices/networking/subnets/
 2. https://repost.aws/knowledge-center/eks-vpc-subnet-discovery
+
+We will use private subnet for running workloads & public subnet to deploy NLB or ALB
 */
 
 # two private subnets in two AZs
