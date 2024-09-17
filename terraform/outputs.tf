@@ -52,6 +52,17 @@ output "private_subnet_cidrs" {
 }
 
 output "internet_gateway" {
-  description = "Internet gateway to route traffice from VPC to internet"
+  description = "Internet gateway to route traffic from VPC to internet"
   value       = aws_internet_gateway.igw.tags["Name"]
+}
+
+
+output "nat_gateway" {
+  description = "Nat Gateway to allow private instances to connect to internet"
+  value       = aws_nat_gateway.nat.tags["Name"]
+}
+
+output "nat_gateway_ip" {
+  description = "Nat Gateway Public Static IP"
+  value       = aws_nat_gateway.nat.public_ip
 }
