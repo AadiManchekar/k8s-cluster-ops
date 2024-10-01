@@ -66,3 +66,8 @@ output "nat_gateway_ip" {
   description = "Nat Gateway Public Static IP"
   value       = aws_nat_gateway.nat.public_ip
 }
+
+output "eks_role" {
+  description = "EKS IAM role"
+  value = aws_iam_role.eks.name
+}
