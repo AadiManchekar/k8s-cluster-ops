@@ -56,7 +56,6 @@ output "internet_gateway" {
   value       = aws_internet_gateway.igw.tags["Name"]
 }
 
-
 output "nat_gateway" {
   description = "Nat Gateway to allow private instances to connect to internet"
   value       = aws_nat_gateway.nat.tags["Name"]
@@ -69,5 +68,5 @@ output "nat_gateway_ip" {
 
 output "eks_role" {
   description = "EKS IAM role"
-  value = aws_iam_role.eks.name
+  value       = aws_iam_role.eks.name
 }
