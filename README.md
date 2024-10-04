@@ -3,15 +3,10 @@ This repo contains code to create a k8s cluster on eks which is required by vari
 
 ## Infra components
 
- 1. Consul
- 2. Vault
- 3. Kafka
- 4. Postgresql
- 5. Redis
- 6. Elasticsearch
- 7. Cassandra
- 8. Ingress-Nginx
- 9. Cert-Manager
+ 1. Vault
+ 2. Kafka
+ 3. Ingress-Nginx
+ 4. Cert-Manager
 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTIwNDQ5Mzg0MDEsMTQwMDk0ODA5XX0=
